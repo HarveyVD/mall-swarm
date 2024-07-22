@@ -1,10 +1,12 @@
 # Sử dụng base image
 FROM openjdk:8
 
+EXPOSE 8080
+
 WORKDIR /app
 
 # Copy file jar từ target vào thư mục làm việc trong container
-COPY ./target/mall-auth-1.0-SNAPSHOT.jar /app/mall-auth.jar
+COPY ./target/*.jar /app/mall-auth.jar
 
 # Cài đặt các biến môi trường cần thiết
 ENV SPRING_PROFILES_ACTIVE=prod
