@@ -10,7 +10,7 @@ EXPOSE 8080
 WORKDIR /app
 
 # Copy file jar từ target vào thư mục làm việc trong container
-COPY ./target/*.jar /app/mall-admin.jar
+COPY ./target/mall-admin-1.0-SNAPSHOT.jar /app/mall-admin.jar
 
 # Cài đặt các biến môi trường cần thiết
 ENV SPRING_PROFILES_ACTIVE=prod
