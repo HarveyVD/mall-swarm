@@ -1,7 +1,9 @@
 # Sử dụng base image
 FROM openjdk:8
 
-RUN apt-get update && apt-get install -y bash
+RUN apt-get update && apt-get install -y \
+    bash \
+    iputils-ping
 
 EXPOSE 8080
 
