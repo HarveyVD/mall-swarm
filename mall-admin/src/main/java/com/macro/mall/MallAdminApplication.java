@@ -10,6 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * Created by macro on 2018/4/26.
  */
 @SpringBootApplication
+@EnableFeignClients
 public class MallAdminApplication {
     public static void main(String[] args) {
         SpringApplication.run(MallAdminApplication.class, args);
