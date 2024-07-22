@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mall-search-deployment
-  namespace: default
+  namespace: mall
   labels:
     app: mall-search
 spec:
