@@ -1,6 +1,8 @@
 # Sử dụng base image
 FROM openjdk:8
 
+RUN apt-get update && apt-get install -y bash
+
 EXPOSE 8080
 
 WORKDIR /app
