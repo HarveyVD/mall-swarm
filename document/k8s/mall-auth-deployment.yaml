@@ -15,6 +15,8 @@ spec:
       labels:
         app: mall-auth
     spec:
+      imagePullSecrets:
+        - name: registry-creds
       containers:
         - name: mall-auth
           # 指定Docker Hub中的镜像地址
