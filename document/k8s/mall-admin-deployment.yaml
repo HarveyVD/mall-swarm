@@ -18,7 +18,7 @@ spec:
       containers:
         - name: mall-admin
           # 指定Docker Hub中的镜像地址
-          image: macrodocker/mall-admin:1.0-SNAPSHOT
+          image: registry.kube-public/mall/mall-admin:1.0-SNAPSHOT
           ports:
             - containerPort: 8080
           env:
